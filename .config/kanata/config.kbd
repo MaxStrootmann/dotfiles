@@ -1,0 +1,146 @@
+;; Home row mods QWERTY – tuned for slower pinky & ring fingers
+;; - Pinky has longest hold-time (prevents accidental mods)
+;; - Ring slightly slower than index/middle
+;; - Index/middle stay snappy
+;; - Keeps your tap-cancel + same-hand early tap behavior
+;;
+;; REWRITE:
+;; - Removed chords
+;; - Implemented "hold-to-layer" for Return:
+;;   Hold Caps -> momentary return_layer, where Space = Enter
+;;   (Optional) Hold Space -> momentary return_layer, where Caps = Caps (or anything)
+
+(defcfg
+  process-unmapped-keys yes
+  linux-dev-names-include (
+    "Corne Choc Pro Keyboard"
+    "AT Translated Set 2 keyboard"
+  )
+)
+
+(defsrc
+  esc caps
+  e
+  a   s   d   f   j   k   l   ;
+  spc
+)
+
+(defvar
+  ;; Base timings (index & middle fingers)
+  tap-time 200
+  hold-time 150
+
+  ;; Slower fingers
+  hold-time-ring 190
+  hold-time-pinky 250
+
+  ;; Layer key timings (separate so you can tune without affecting HRMs)
+  layer-tap-time 200
+  layer-hold-time 190
+
+  left-hand-keys (
+    q w e r t
+    a s d f g
+    z x c v
+  )
+  right-hand-keys (
+      y u i o p
+      h j k l ;
+    b n m , . /
+  )
+)
+
+(deflayer base
+  caps esc
+  @e
+  @a  @s  @d  @f  @j  @k  @l  @;
+  spc
+)
+
+(deflayer nomods
+  caps esc
+  e
+  a   s   d   f   j   k   l   ;
+  spc
+)
+
+(deffakekeys
+  to-base (layer-switch base)
+)
+
+(defalias
+  ;; Disable mods briefly after a tap (prevents rapid misfires)
+  tap (multi
+    (layer-switch nomods)
+    (on-idle-fakekey to-base tap 20)
+  )
+
+  ;; LEFT HAND HRMs
+  a (tap-hold-release-keys
+      $tap-time
+      $hold-time-pinky
+      (multi a @tap)
+      lalt
+      $left-hand-keys)
+
+  s (tap-hold-release-keys
+      $tap-time
+      $hold-time-ring
+      (multi s @tap)
+      lmet
+      $left-hand-keys)
+
+  d (tap-hold-release-keys
+      $tap-time
+      $hold-time
+      (multi d @tap)
+      lsft
+      $left-hand-keys)
+
+  f (tap-hold-release-keys
+      $tap-time
+      $hold-time
+      (multi f @tap)
+      lctl
+      $left-hand-keys)
+
+  ;; RIGHT HAND HRMs
+  j (tap-hold-release-keys
+      $tap-time
+      $hold-time
+      (multi j @tap)
+      rctl
+      $right-hand-keys)
+
+  k (tap-hold-release-keys
+      $tap-time
+      $hold-time
+      (multi k @tap)
+      rsft
+      $right-hand-keys)
+
+  l (tap-hold-release-keys
+      $tap-time
+      $hold-time-ring
+      (multi l @tap)
+      rmet
+      $right-hand-keys)
+
+  ; (tap-hold-release-keys
+      $tap-time
+      $hold-time-pinky
+      (multi ; @tap)
+      ralt
+      $right-hand-keys)
+
+  e (tap-hold $layer-tap-time $layer-hold-time e (layer-while-held return_layer))
+)
+
+;; While holding e
+;; Space becomes Enter. Everything else falls through.
+(deflayer return_layer
+  _   _
+  _
+  _   _   _   _   _   _   _   _
+  ret
+)

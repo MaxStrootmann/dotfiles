@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "currentProfile": "default",
+  "profiles": {
+    "default": {
+      "accessToken": "tr_pat_8m7b5m2i5yxj9hcoh8f7babgw3e4gz4a72ujmowe",
+      "apiUrl": "https://api.trigger.dev"
+    }
+  },
+  "settings": {
+    "hasSeenMCPInstallPrompt": true,
+    "hasSeenRulesInstallPrompt": true,
+    "lastRulesInstallPromptVersion": "4.3.0"
+  }
+}

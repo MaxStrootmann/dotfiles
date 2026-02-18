@@ -1,0 +1,14 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "theme": "system",
+  "mcp": {
+    "payloadcms": {
+      "type": "remote",
+      "url": "http://localhost:3000/api/mcp",
+      "headers": {
+	"Authorization": "Bearer 6ccd5533-e12d-4a84-9312-298f13ed2754",
+      },
+      "enabled": true,
+    }
+  }
+}
