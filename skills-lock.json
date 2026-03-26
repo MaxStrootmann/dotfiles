@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "omarchy": {
+      "source": "robzolkos/omarchy-skill",
+      "sourceType": "github",
+      "computedHash": "6b8e0551f570e483c0876e0e089d5d278225d4e28a3606f9315b74743ccd7331"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+# Changes require a session restart to take effect.
+#
+# Prefer the dGPU as Aquamarine's primary DRM device because the only
+# external display output on this laptop is physically attached to the
+# NVIDIA GPU (`HDMI-A-1` on 0000:01:00.0).
+# export AQ_DRM_DEVICES=/dev/dri/by-path/pci-0000:01:00.0-card:/dev/dri/by-path/pci-0000:00:02.0-card

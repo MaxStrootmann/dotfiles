@@ -2,3 +2,5 @@
 .config/google-chrome/
 .config/obsidian/
 .config/chromium/
+.config/codex/secrets/
+.config/codex/secrets/*

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Zero VPS Admin"
+  short_description: "Operate and secure Agent Zero on Linux VPS hosts"
+  default_prompt: "Use $agent-zero-vps-admin to diagnose and fix my Agent Zero Docker + reverse proxy deployment."

@@ -1,0 +1,117 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REMOTE_HOST="${REMOTE_HOST:-max@agent-zero}"
+NOVNC_URL="${NOVNC_URL:-http://127.0.0.1:6080/vnc.html?autoconnect=1&resize=scale}"
+TUNNEL_PID_FILE="${XDG_RUNTIME_DIR:-/tmp}/agent-zero-browser-tunnel.pid"
+
+open_browser_tab() {
+  if command -v google-chrome-stable >/dev/null 2>&1; then
+    google-chrome-stable --new-tab "${NOVNC_URL}" >/dev/null 2>&1 &
+    return
+  fi
+
+  if command -v google-chrome >/dev/null 2>&1; then
+    google-chrome --new-tab "${NOVNC_URL}" >/dev/null 2>&1 &
+    return
+  fi
+
+  if command -v chromium >/dev/null 2>&1; then
+    chromium --new-tab "${NOVNC_URL}" >/dev/null 2>&1 &
+    return
+  fi
+
+  xdg-open "${NOVNC_URL}" >/dev/null 2>&1 &
+}
+
+tunnel_running() {
+  [ -f "${TUNNEL_PID_FILE}" ] || return 1
+  kill -0 "$(cat "${TUNNEL_PID_FILE}")" 2>/dev/null
+}
+
+start_tunnel() {
+  if tunnel_running; then
+    echo "Tunnel already running on PID $(cat "${TUNNEL_PID_FILE}")"
+  else
+    nohup "${SCRIPT_DIR}/agent-zero-browser-tunnel.sh" >/tmp/agent-zero-browser-tunnel.log 2>&1 &
+    echo $! > "${TUNNEL_PID_FILE}"
+    sleep 1
+  fi
+
+  open_browser_tab
+  echo "noVNC: ${NOVNC_URL}"
+  echo "CDP:   http://127.0.0.1:9222/json/version"
+}
+
+stop_tunnel() {
+  if tunnel_running; then
+    kill "$(cat "${TUNNEL_PID_FILE}")"
+    rm -f "${TUNNEL_PID_FILE}"
+    echo "Tunnel stopped"
+  else
+    echo "Tunnel is not running"
+  fi
+}
+
+status_tunnel() {
+  if tunnel_running; then
+    echo "Tunnel running on PID $(cat "${TUNNEL_PID_FILE}")"
+  else
+    echo "Tunnel is not running"
+  fi
+}
+
+usage() {
+  cat <<'EOF'
+usage: dev <command> [args]
+
+commands:
+  bootstrap       bootstrap max@agent-zero
+  sync-dotfiles   sync the server-safe dotfiles subset to the VPS
+  put <paths...>  copy files to ~/shared/inbox on the VPS
+  get [paths...]  copy files from the VPS to ~/Downloads/agent-zero
+  tunnel          start the SSH tunnel and open noVNC in a browser tab
+  tunnel-stop     stop the background SSH tunnel
+  tunnel-status   show tunnel status
+EOF
+}
+
+case "${1:-}" in
+  bootstrap)
+    shift
+    exec "${SCRIPT_DIR}/agent-zero-bootstrap.sh" "$@"
+    ;;
+  sync-dotfiles)
+    shift
+    exec "${SCRIPT_DIR}/agent-zero-sync-dotfiles.sh" "$@"
+    ;;
+  put)
+    shift
+    exec "${SCRIPT_DIR}/agent-zero-put.sh" "$@"
+    ;;
+  get)
+    shift
+    exec "${SCRIPT_DIR}/agent-zero-get.sh" "$@"
+    ;;
+  tunnel)
+    shift
+    start_tunnel "$@"
+    ;;
+  tunnel-stop)
+    shift
+    stop_tunnel "$@"
+    ;;
+  tunnel-status)
+    shift
+    status_tunnel "$@"
+    ;;
+  ""|-h|--help|help)
+    usage
+    ;;
+  *)
+    echo "Unknown command: $1" >&2
+    usage >&2
+    exit 1
+    ;;
+esac

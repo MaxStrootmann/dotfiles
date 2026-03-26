@@ -4,6 +4,7 @@ DIRS=(
   "$HOME/Downloads"
   "$HOME/Documents"
   "$HOME/Work"
+  "$HOME/Agents"
   "$HOME/Work"/*bare
   "$HOME/.config"
   "$HOME"

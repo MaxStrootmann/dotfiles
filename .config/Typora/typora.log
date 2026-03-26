@@ -1,0 +1,396 @@
+INFO 2/24/2026, 12:05:36 PM  38  launch with argv [/usr/share/typora/Typora, --enable-wayland-ime, /home/max/Agents/facturen/AGENTS.md]
+INFO 2/24/2026, 12:05:36 PM  122  ------------------start------------------
+DEBUG 2/24/2026, 12:05:36 PM  133  before setting 
+DEBUG 2/24/2026, 12:05:36 PM  153  prepDatabase /home/max/.config/Typora/profile.data
+DEBUG 2/24/2026, 12:05:36 PM  156  prepDatabase /home/max/.config/Typora/history.data
+INFO 2/24/2026, 12:05:36 PM  159  OS is linux 6.18.7-arch1-1
+INFO 2/24/2026, 12:05:36 PM  159  launchFromDiffVersion, pre version is undefined
+INFO 2/24/2026, 12:05:36 PM  159  start LM in devVersion=false
+INFO 2/24/2026, 12:05:36 PM  166  overwriteThemeFolder
+DEBUG 2/24/2026, 12:05:36 PM  170  after setting 
+INFO 2/24/2026, 12:05:36 PM  170  typora version: 1.12.4
+DEBUG 2/24/2026, 12:05:36 PM  170  app.openFile
+INFO 2/24/2026, 12:05:36 PM  170  addRecentDocument
+DEBUG 2/24/2026, 12:05:36 PM  259  added recovery 1 /home/max/Agents/facturen/AGENTS.md  (0)
+INFO 2/24/2026, 12:05:36 PM  262  [watch L]
+DEBUG 2/24/2026, 12:05:36 PM  262  prepDatabase /home/max/.config/Typora/39nAbapUCR
+INFO 2/24/2026, 12:05:36 PM  265  no info
+INFO 2/24/2026, 12:05:36 PM  265  ls put SLicense
+DEBUG 2/24/2026, 12:05:36 PM  266  onUnfillLicense
+DEBUG 2/24/2026, 12:05:36 PM  266  trailRemains is 15
+INFO 2/24/2026, 12:05:36 PM  266  [L] installDate is 2/24/2026, trail remains: 15 days
+DEBUG 2/24/2026, 12:05:36 PM  266  onUnfillLicense
+INFO 2/24/2026, 12:05:36 PM  266  [watch L] hasL: false
+DEBUG 2/24/2026, 12:05:36 PM  330  putAccelerator File -> &File
+DEBUG 2/24/2026, 12:05:36 PM  330  putAccelerator Edit -> &Edit
+DEBUG 2/24/2026, 12:05:36 PM  330  putAccelerator Paragraph -> &Paragraph
+DEBUG 2/24/2026, 12:05:36 PM  330  putAccelerator Format -> F&ormat
+DEBUG 2/24/2026, 12:05:36 PM  331  putAccelerator View -> &View
+DEBUG 2/24/2026, 12:05:36 PM  331  putAccelerator Themes -> &Themes
+DEBUG 2/24/2026, 12:05:36 PM  331  putAccelerator Help -> &Help
+INFO 2/24/2026, 12:05:36 PM  347  synced recovery
+user-dict.json not found
+INFO 2/24/2026, 12:05:41 PM  5659  got argv [/usr/share/typora/Typora, --enable-wayland-ime, --allow-file-access-from-files, --ozone-platform=wayland, --desktop-startup-id=660b4bf4-f370-46af-aaf2-0f1509c8ef61, /home/max/Agents/facturen/AGENTS.md] from secondary instance
+DEBUG 2/24/2026, 12:05:41 PM  5659  app.openFile
+INFO 2/24/2026, 12:05:41 PM  32  secondary instance would exit
+INFO 2/24/2026, 12:05:41 PM  100  exit second instance
+INFO 2/24/2026, 12:05:43 PM  7467  got argv [/usr/share/typora/Typora, --enable-wayland-ime, --allow-file-access-from-files, --ozone-platform=wayland, --desktop-startup-id=2f7d3471-245d-4792-bc8a-836cd9ba4530, /home/max/Agents/facturen/AGENTS.md] from secondary instance
+DEBUG 2/24/2026, 12:05:43 PM  7467  app.openFile
+INFO 2/24/2026, 12:05:43 PM  34  secondary instance would exit
+INFO 2/24/2026, 12:05:43 PM  118  exit second instance
+DEBUG 2/24/2026, 12:05:54 PM  18175  onUnfillLicense
+ERROR 2/24/2026, 12:06:11 PM  35353  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+INFO 2/24/2026, 12:06:11 PM  35356  handle document.loadData
+DEBUG 2/24/2026, 12:06:11 PM  35356  document.loadData 0
+ERROR 2/24/2026, 12:06:11 PM  35356  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+INFO 2/24/2026, 12:06:11 PM  35403  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2/24/2026, 12:06:11 PM  35403  [RenderProcess 1][Log] reset NodeMap
+INFO 2/24/2026, 12:06:11 PM  35404  [RenderProcess 1][Log] readContentFrom /home/max/Agents/facturen/AGENTS.md
+DEBUG 2/24/2026, 12:06:11 PM  35562  added recovery 1 /home/max/Agents/facturen/AGENTS.md  (0)
+INFO 2/24/2026, 12:06:11 PM  35563  synced recovery
+INFO 2/24/2026, 12:06:29 PM  52964  [RenderProcess 1][Log] onBecomeActive
+INFO 2/24/2026, 12:06:29 PM  52964  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2/24/2026, 12:06:29 PM  53179  [focus] 1
+INFO 2/24/2026, 12:06:34 PM  58031  [blur] 1
+INFO 2/24/2026, 12:06:34 PM  58032  [win] blur
+INFO 2/24/2026, 12:06:34 PM  58167  [focus] 1
+INFO 2/24/2026, 12:06:45 PM  69796  [blur] 1
+INFO 2/24/2026, 12:06:45 PM  69796  [win] blur
+INFO 2/24/2026, 12:06:46 PM  69893  [focus] 1
+INFO 2/24/2026, 12:06:46 PM  70273  [blur] 1
+INFO 2/24/2026, 12:06:46 PM  70273  [win] blur
+DEBUG 2/24/2026, 12:06:50 PM  74437  app.openFile
+DEBUG 2/24/2026, 12:06:50 PM  74449  added recovery 2 null  (0)
+INFO 2/24/2026, 12:06:50 PM  74455  synced recovery
+INFO 2/24/2026, 12:06:50 PM  74458  [focus] 1
+INFO 2/24/2026, 12:06:50 PM  74516  [blur] 1
+INFO 2/24/2026, 12:06:50 PM  74517  [win] blur
+INFO 2/24/2026, 12:06:50 PM  74517  [focus] 2
+INFO 2/24/2026, 12:06:50 PM  74677  [blur] 2
+INFO 2/24/2026, 12:06:50 PM  74677  [win] blur
+INFO 2/24/2026, 12:06:50 PM  74677  [focus] 1
+DEBUG 2/24/2026, 12:06:51 PM  74951  onUnfillLicense
+ERROR 2/24/2026, 12:06:51 PM  74959  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 2/24/2026, 12:06:51 PM  74960  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+INFO 2/24/2026, 12:06:51 PM  74961  handle document.loadData
+DEBUG 2/24/2026, 12:06:51 PM  74961  document.loadData 0
+INFO 2/24/2026, 12:06:51 PM  75027  [RenderProcess 2][Log] [UndoManager] reset commandStack
+INFO 2/24/2026, 12:06:51 PM  75027  [RenderProcess 2][Log] reset NodeMap
+DEBUG 2/24/2026, 12:06:51 PM  75041  added recovery 2   (0)
+INFO 2/24/2026, 12:06:51 PM  75042  synced recovery
+INFO 2/24/2026, 12:06:51 PM  75190  [RenderProcess 2][Log] onBecomeActive
+INFO 2/24/2026, 12:06:51 PM  75190  [RenderProcess 2][Log] File.activeWindow = true
+INFO 2/24/2026, 12:06:51 PM  75196  [blur] 1
+INFO 2/24/2026, 12:06:51 PM  75196  [win] blur
+INFO 2/24/2026, 12:06:51 PM  75196  [focus] 2
+INFO 2/24/2026, 12:06:51 PM  75651  [blur] 2
+INFO 2/24/2026, 12:06:51 PM  75651  [win] blur
+INFO 2/24/2026, 12:06:51 PM  75651  [focus] 1
+INFO 2/24/2026, 12:06:55 PM  78899  [focus] 2
+INFO 2/24/2026, 12:07:30 PM  113957  [blur] 2
+INFO 2/24/2026, 12:07:30 PM  113957  [win] blur
+INFO 2/24/2026, 12:07:46 PM  130252  [focus] 2
+INFO 2/24/2026, 12:07:53 PM  137257  synced recovery
+INFO 2/24/2026, 12:07:53 PM  137257  ----------------before-quit-----------------
+INFO 2/24/2026, 12:07:53 PM  137257  ------------------will-quit------------------
+INFO 2/24/2026, 12:07:53 PM  137258  -----------------quit------------------
+INFO 2/24/2026, 12:07:53 PM  137258  closeLogging
+INFO 2/24/2026, 12:08:51 PM  32  launch with argv [/usr/share/typora/Typora, --enable-wayland-ime, /home/max/Agents/facturen/skills/invoice-proposal-pack/output/2026-02-24-acme-llc/invoice.md]
+INFO 2/24/2026, 12:08:51 PM  107  ------------------start------------------
+DEBUG 2/24/2026, 12:08:51 PM  113  before setting 
+DEBUG 2/24/2026, 12:08:51 PM  139  prepDatabase /home/max/.config/Typora/profile.data
+DEBUG 2/24/2026, 12:08:51 PM  142  prepDatabase /home/max/.config/Typora/history.data
+INFO 2/24/2026, 12:08:51 PM  145  OS is linux 6.18.7-arch1-1
+INFO 2/24/2026, 12:08:51 PM  145  start LM in devVersion=false
+DEBUG 2/24/2026, 12:08:51 PM  152  after setting 
+INFO 2/24/2026, 12:08:51 PM  152  typora version: 1.12.4
+DEBUG 2/24/2026, 12:08:51 PM  153  app.openFile
+INFO 2/24/2026, 12:08:51 PM  153  addRecentDocument
+INFO 2/24/2026, 12:08:51 PM  190  [watch L]
+DEBUG 2/24/2026, 12:08:51 PM  190  prepDatabase /home/max/.config/Typora/39nAbapUCR
+INFO 2/24/2026, 12:08:51 PM  192  no info
+INFO 2/24/2026, 12:08:51 PM  192  ls put SLicense
+DEBUG 2/24/2026, 12:08:51 PM  192  onUnfillLicense
+DEBUG 2/24/2026, 12:08:51 PM  192  trailRemains is 15
+INFO 2/24/2026, 12:08:51 PM  193  [L] installDate is 2/24/2026, trail remains: 15 days
+DEBUG 2/24/2026, 12:08:51 PM  193  onUnfillLicense
+INFO 2/24/2026, 12:08:51 PM  216  [watch L] hasL: false
+user-dict.json not found
+DEBUG 2/24/2026, 12:08:51 PM  237  added recovery 2 /home/max/Agents/facturen/skills/invoice-proposal-pack/output/2026-02-24-acme-llc/invoice.md  (0)
+DEBUG 2/24/2026, 12:08:51 PM  302  putAccelerator File -> &File
+DEBUG 2/24/2026, 12:08:51 PM  303  putAccelerator Edit -> &Edit
+DEBUG 2/24/2026, 12:08:51 PM  303  putAccelerator Paragraph -> &Paragraph
+DEBUG 2/24/2026, 12:08:51 PM  303  putAccelerator Format -> F&ormat
+DEBUG 2/24/2026, 12:08:51 PM  303  putAccelerator View -> &View
+DEBUG 2/24/2026, 12:08:51 PM  303  putAccelerator Themes -> &Themes
+DEBUG 2/24/2026, 12:08:51 PM  303  putAccelerator Help -> &Help
+INFO 2/24/2026, 12:08:51 PM  328  synced recovery
+DEBUG 2/24/2026, 12:08:52 PM  777  onUnfillLicense
+ERROR 2/24/2026, 12:08:52 PM  783  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+INFO 2/24/2026, 12:08:52 PM  785  handle document.loadData
+DEBUG 2/24/2026, 12:08:52 PM  785  document.loadData 0
+ERROR 2/24/2026, 12:08:52 PM  785  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+INFO 2/24/2026, 12:08:52 PM  861  [RenderProcess 2][Log] [UndoManager] reset commandStack
+INFO 2/24/2026, 12:08:52 PM  861  [RenderProcess 2][Log] reset NodeMap
+INFO 2/24/2026, 12:08:52 PM  861  [RenderProcess 2][Log] readContentFrom /home/max/Agents/facturen/skills/invoice-proposal-pack/output/2026-02-24-acme-llc/invoice.md
+DEBUG 2/24/2026, 12:08:52 PM  935  added recovery 2 /home/max/Agents/facturen/skills/invoice-proposal-pack/output/2026-02-24-acme-llc/invoice.md  (0)
+INFO 2/24/2026, 12:08:52 PM  936  synced recovery
+INFO 2/24/2026, 12:08:52 PM  993  [RenderProcess 2][Log] onBecomeActive
+INFO 2/24/2026, 12:08:52 PM  994  [RenderProcess 2][Log] File.activeWindow = true
+INFO 2/24/2026, 12:09:43 PM  52723  [focus] 1
+INFO 2/24/2026, 12:09:43 PM  52746  [blur] 1
+INFO 2/24/2026, 12:09:43 PM  52746  [focus] 2
+DEBUG 2/24/2026, 12:09:45 PM  53908  added recovery 2 /home/max/Agents/facturen/skills/invoice-proposal-pack/output/2026-02-24-acme-llc/invoice.md "# INVOICE
+
+## H...ur business.da
+" (474)
+INFO 2/24/2026, 12:09:45 PM  53909  synced recovery
+INFO 2/24/2026, 12:09:45 PM  54215  [blur] 2
+INFO 2/24/2026, 12:09:45 PM  54216  [win] blur
+INFO 2/24/2026, 12:09:45 PM  54660  [focus] 1
+INFO 2/24/2026, 12:09:46 PM  55007  [blur] 1
+INFO 2/24/2026, 12:09:46 PM  55194  [focus] 2
+INFO 2/24/2026, 12:09:46 PM  55232  [blur] 2
+INFO 2/24/2026, 12:09:46 PM  55232  [win] blur
+INFO 2/24/2026, 12:09:46 PM  55232  [focus] 1
+INFO 2/24/2026, 12:09:46 PM  55538  [blur] 1
+INFO 2/24/2026, 12:09:46 PM  55538  [focus] 2
+INFO 2/24/2026, 12:09:46 PM  55712  [blur] 2
+INFO 2/24/2026, 12:09:46 PM  55712  [win] blur
+INFO 2/24/2026, 12:09:46 PM  55712  [focus] 1
+INFO 2/24/2026, 12:09:48 PM  57467  [focus] 2
+INFO 2/24/2026, 12:09:49 PM  57795  [blur] 2
+INFO 2/24/2026, 12:09:49 PM  57795  [win] blur
+INFO 2/24/2026, 12:09:49 PM  57886  [focus] 2
+INFO 2/24/2026, 12:09:52 PM  61129  [blur] 2
+INFO 2/24/2026, 12:09:52 PM  61129  [win] blur
+INFO 2/24/2026, 12:09:58 PM  67734  [focus] 2
+INFO 2/24/2026, 12:10:07 PM  76020  synced recovery
+INFO 2/24/2026, 12:10:07 PM  76020  ----------------before-quit-----------------
+INFO 2/24/2026, 12:10:07 PM  76020  ------------------will-quit------------------
+INFO 2/24/2026, 12:10:07 PM  76021  -----------------quit------------------
+INFO 2/24/2026, 12:10:07 PM  76021  closeLogging
+INFO 2/24/2026, 8:59:15 PM  38  launch with argv [/usr/share/typora/Typora, --enable-wayland-ime, /home/max/Agents/facturen/output/2026-02-24-henkbureau-henkerland/invoice.md]
+INFO 2/24/2026, 8:59:15 PM  119  ------------------start------------------
+DEBUG 2/24/2026, 8:59:15 PM  125  before setting 
+DEBUG 2/24/2026, 8:59:15 PM  174  prepDatabase /home/max/.config/Typora/profile.data
+DEBUG 2/24/2026, 8:59:15 PM  179  prepDatabase /home/max/.config/Typora/history.data
+INFO 2/24/2026, 8:59:15 PM  183  OS is linux 6.18.7-arch1-1
+INFO 2/24/2026, 8:59:15 PM  184  start LM in devVersion=false
+DEBUG 2/24/2026, 8:59:15 PM  197  after setting 
+INFO 2/24/2026, 8:59:15 PM  198  typora version: 1.12.4
+DEBUG 2/24/2026, 8:59:15 PM  198  app.openFile
+INFO 2/24/2026, 8:59:15 PM  198  addRecentDocument
+INFO 2/24/2026, 8:59:15 PM  251  [watch L]
+DEBUG 2/24/2026, 8:59:15 PM  251  prepDatabase /home/max/.config/Typora/39nAbapUCR
+INFO 2/24/2026, 8:59:15 PM  254  no info
+INFO 2/24/2026, 8:59:15 PM  254  ls put SLicense
+DEBUG 2/24/2026, 8:59:15 PM  254  onUnfillLicense
+DEBUG 2/24/2026, 8:59:15 PM  254  trailRemains is 15
+INFO 2/24/2026, 8:59:15 PM  255  [L] installDate is 2/24/2026, trail remains: 15 days
+DEBUG 2/24/2026, 8:59:15 PM  255  onUnfillLicense
+INFO 2/24/2026, 8:59:15 PM  255  [watch L] hasL: false
+user-dict.json not found
+DEBUG 2/24/2026, 8:59:15 PM  311  added recovery 1 /home/max/Agents/facturen/output/2026-02-24-henkbureau-henkerland/invoice.md  (0)
+DEBUG 2/24/2026, 8:59:15 PM  324  putAccelerator File -> &File
+DEBUG 2/24/2026, 8:59:15 PM  324  putAccelerator Edit -> &Edit
+DEBUG 2/24/2026, 8:59:15 PM  325  putAccelerator Paragraph -> &Paragraph
+DEBUG 2/24/2026, 8:59:15 PM  325  putAccelerator Format -> F&ormat
+DEBUG 2/24/2026, 8:59:15 PM  326  putAccelerator View -> &View
+DEBUG 2/24/2026, 8:59:15 PM  326  putAccelerator Themes -> &Themes
+DEBUG 2/24/2026, 8:59:15 PM  326  putAccelerator Help -> &Help
+INFO 2/24/2026, 8:59:15 PM  419  synced recovery
+DEBUG 2/24/2026, 8:59:16 PM  1412  onUnfillLicense
+ERROR 2/24/2026, 8:59:16 PM  1427  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 2/24/2026, 8:59:16 PM  1430  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+INFO 2/24/2026, 8:59:16 PM  1431  handle document.loadData
+DEBUG 2/24/2026, 8:59:16 PM  1431  document.loadData 0
+INFO 2/24/2026, 8:59:16 PM  1557  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2/24/2026, 8:59:16 PM  1557  [RenderProcess 1][Log] reset NodeMap
+INFO 2/24/2026, 8:59:16 PM  1558  [RenderProcess 1][Log] readContentFrom /home/max/Agents/facturen/output/2026-02-24-henkbureau-henkerland/invoice.md
+DEBUG 2/24/2026, 8:59:16 PM  1719  added recovery 1 /home/max/Agents/facturen/output/2026-02-24-henkbureau-henkerland/invoice.md  (0)
+INFO 2/24/2026, 8:59:16 PM  1722  synced recovery
+INFO 2/24/2026, 8:59:16 PM  1828  [RenderProcess 1][Log] onBecomeActive
+INFO 2/24/2026, 8:59:16 PM  1829  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2/24/2026, 9:00:09 PM  54453  [focus] 1
+INFO 2/24/2026, 9:00:09 PM  54483  [blur] 1
+INFO 2/24/2026, 9:00:09 PM  54483  [win] blur
+INFO 2/24/2026, 9:00:11 PM  56010  [focus] 1
+INFO 2/24/2026, 9:00:18 PM  63663  synced recovery
+INFO 2/24/2026, 9:00:18 PM  63663  ----------------before-quit-----------------
+INFO 2/24/2026, 9:00:18 PM  63663  ------------------will-quit------------------
+INFO 2/24/2026, 9:00:18 PM  63667  -----------------quit------------------
+INFO 2/24/2026, 9:00:18 PM  63667  closeLogging
+INFO 2/25/2026, 9:33:05 AM  37  launch with argv [/usr/share/typora/Typora, --enable-wayland-ime, /home/max/Agents/facturen/skills/invoice-proposal-pack/SKILL.md]
+INFO 2/25/2026, 9:33:05 AM  119  ------------------start------------------
+DEBUG 2/25/2026, 9:33:05 AM  126  before setting 
+DEBUG 2/25/2026, 9:33:05 AM  148  prepDatabase /home/max/.config/Typora/profile.data
+DEBUG 2/25/2026, 9:33:05 AM  152  prepDatabase /home/max/.config/Typora/history.data
+INFO 2/25/2026, 9:33:05 AM  156  OS is linux 6.18.7-arch1-1
+INFO 2/25/2026, 9:33:05 AM  156  start LM in devVersion=false
+DEBUG 2/25/2026, 9:33:05 AM  167  after setting 
+INFO 2/25/2026, 9:33:05 AM  167  typora version: 1.12.4
+DEBUG 2/25/2026, 9:33:05 AM  168  app.openFile
+INFO 2/25/2026, 9:33:05 AM  168  addRecentDocument
+INFO 2/25/2026, 9:33:05 AM  218  [watch L]
+DEBUG 2/25/2026, 9:33:05 AM  218  prepDatabase /home/max/.config/Typora/39nAbapUCR
+INFO 2/25/2026, 9:33:05 AM  221  no info
+INFO 2/25/2026, 9:33:05 AM  221  ls put SLicense
+DEBUG 2/25/2026, 9:33:05 AM  221  onUnfillLicense
+DEBUG 2/25/2026, 9:33:05 AM  221  trailRemains is 15
+INFO 2/25/2026, 9:33:05 AM  222  [L] installDate is 2/24/2026, trail remains: 15 days
+DEBUG 2/25/2026, 9:33:05 AM  222  onUnfillLicense
+INFO 2/25/2026, 9:33:05 AM  222  [watch L] hasL: false
+user-dict.json not found
+DEBUG 2/25/2026, 9:33:05 AM  274  added recovery 1 /home/max/Agents/facturen/skills/invoice-proposal-pack/SKILL.md  (0)
+DEBUG 2/25/2026, 9:33:05 AM  285  putAccelerator File -> &File
+DEBUG 2/25/2026, 9:33:05 AM  286  putAccelerator Edit -> &Edit
+DEBUG 2/25/2026, 9:33:05 AM  287  putAccelerator Paragraph -> &Paragraph
+DEBUG 2/25/2026, 9:33:05 AM  287  putAccelerator Format -> F&ormat
+DEBUG 2/25/2026, 9:33:05 AM  287  putAccelerator View -> &View
+DEBUG 2/25/2026, 9:33:05 AM  288  putAccelerator Themes -> &Themes
+DEBUG 2/25/2026, 9:33:05 AM  288  putAccelerator Help -> &Help
+INFO 2/25/2026, 9:33:05 AM  383  synced recovery
+DEBUG 2/25/2026, 9:33:06 AM  1150  onUnfillLicense
+ERROR 2/25/2026, 9:33:06 AM  1162  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+ERROR 2/25/2026, 9:33:06 AM  1164  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+INFO 2/25/2026, 9:33:06 AM  1165  handle document.loadData
+DEBUG 2/25/2026, 9:33:06 AM  1165  document.loadData 0
+INFO 2/25/2026, 9:33:06 AM  1268  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2/25/2026, 9:33:06 AM  1268  [RenderProcess 1][Log] reset NodeMap
+INFO 2/25/2026, 9:33:06 AM  1269  [RenderProcess 1][Log] readContentFrom /home/max/Agents/facturen/skills/invoice-proposal-pack/SKILL.md
+DEBUG 2/25/2026, 9:33:06 AM  1418  added recovery 1 /home/max/Agents/facturen/skills/invoice-proposal-pack/SKILL.md  (0)
+INFO 2/25/2026, 9:33:06 AM  1419  synced recovery
+INFO 2/25/2026, 9:33:06 AM  1527  [RenderProcess 1][Log] onBecomeActive
+INFO 2/25/2026, 9:33:06 AM  1527  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2/25/2026, 9:33:09 AM  4266  got argv [/usr/share/typora/Typora, --enable-wayland-ime, --allow-file-access-from-files, --ozone-platform=wayland, --desktop-startup-id=18c44151-92e9-44d5-a072-481fa5420495, /home/max/Agents/facturen/skills/invoice-proposal-pack/SKILL.md] from secondary instance
+DEBUG 2/25/2026, 9:33:09 AM  4266  app.openFile
+INFO 2/25/2026, 9:33:09 AM  59  secondary instance would exit
+INFO 2/25/2026, 9:33:09 AM  159  exit second instance
+INFO 2/25/2026, 9:33:59 AM  54406  [focus] 2
+INFO 2/25/2026, 9:33:59 AM  54426  [blur] 2
+INFO 2/25/2026, 9:33:59 AM  54426  [focus] 1
+INFO 2/25/2026, 9:34:01 AM  56030  [blur] 1
+INFO 2/25/2026, 9:34:01 AM  56030  [win] blur
+INFO 2/25/2026, 9:34:01 AM  56085  [focus] 2
+INFO 2/25/2026, 9:34:01 AM  56113  [blur] 2
+INFO 2/25/2026, 9:34:01 AM  56276  [focus] 2
+INFO 2/25/2026, 9:34:01 AM  56372  [blur] 2
+INFO 2/25/2026, 9:34:01 AM  56393  [focus] 1
+INFO 2/25/2026, 9:34:02 AM  56842  [blur] 1
+INFO 2/25/2026, 9:34:02 AM  56842  [win] blur
+INFO 2/25/2026, 9:34:02 AM  56842  [focus] 2
+INFO 2/25/2026, 9:34:02 AM  57408  [blur] 2
+INFO 2/25/2026, 9:34:02 AM  57477  [focus] 1
+INFO 2/25/2026, 9:34:03 AM  58008  [blur] 1
+INFO 2/25/2026, 9:34:03 AM  58008  [win] blur
+INFO 2/25/2026, 9:34:03 AM  58008  [focus] 2
+INFO 2/25/2026, 9:34:03 AM  58207  [blur] 2
+INFO 2/25/2026, 9:34:03 AM  58441  [focus] 2
+INFO 2/25/2026, 9:34:04 AM  59688  [blur] 2
+INFO 2/25/2026, 9:34:05 AM  59940  [focus] 2
+INFO 2/25/2026, 9:34:06 AM  61473  [focus] 1
+INFO 2/25/2026, 9:34:08 AM  63471  synced recovery
+INFO 2/25/2026, 9:34:08 AM  63471  ----------------before-quit-----------------
+INFO 2/25/2026, 9:34:08 AM  63471  ------------------will-quit------------------
+INFO 2/25/2026, 9:34:08 AM  63475  -----------------quit------------------
+INFO 2/25/2026, 9:34:08 AM  63476  closeLogging
+INFO 2/25/2026, 4:33:31 PM  39  launch with argv [/usr/share/typora/Typora, --enable-wayland-ime, /home/max/Agents/bbnl-product/Calculatie-product/workflow/03-evidence-matrix-v1.md]
+INFO 2/25/2026, 4:33:31 PM  117  ------------------start------------------
+DEBUG 2/25/2026, 4:33:31 PM  127  before setting 
+DEBUG 2/25/2026, 4:33:31 PM  147  prepDatabase /home/max/.config/Typora/profile.data
+DEBUG 2/25/2026, 4:33:31 PM  150  prepDatabase /home/max/.config/Typora/history.data
+INFO 2/25/2026, 4:33:31 PM  153  OS is linux 6.18.7-arch1-1
+INFO 2/25/2026, 4:33:31 PM  153  start LM in devVersion=false
+DEBUG 2/25/2026, 4:33:31 PM  162  after setting 
+INFO 2/25/2026, 4:33:31 PM  162  typora version: 1.12.4
+DEBUG 2/25/2026, 4:33:31 PM  162  app.openFile
+INFO 2/25/2026, 4:33:31 PM  162  addRecentDocument
+INFO 2/25/2026, 4:33:31 PM  201  [watch L]
+DEBUG 2/25/2026, 4:33:31 PM  201  prepDatabase /home/max/.config/Typora/39nAbapUCR
+INFO 2/25/2026, 4:33:31 PM  204  no info
+INFO 2/25/2026, 4:33:31 PM  204  ls put SLicense
+DEBUG 2/25/2026, 4:33:31 PM  204  onUnfillLicense
+DEBUG 2/25/2026, 4:33:31 PM  204  trailRemains is 14
+INFO 2/25/2026, 4:33:31 PM  204  [L] installDate is 2/24/2026, trail remains: 14 days
+DEBUG 2/25/2026, 4:33:31 PM  204  onUnfillLicense
+INFO 2/25/2026, 4:33:31 PM  204  [watch L] hasL: false
+user-dict.json not found
+DEBUG 2/25/2026, 4:33:31 PM  246  added recovery 1 /home/max/Agents/bbnl-product/Calculatie-product/workflow/03-evidence-matrix-v1.md  (0)
+DEBUG 2/25/2026, 4:33:31 PM  255  putAccelerator File -> &File
+DEBUG 2/25/2026, 4:33:31 PM  256  putAccelerator Edit -> &Edit
+DEBUG 2/25/2026, 4:33:31 PM  256  putAccelerator Paragraph -> &Paragraph
+DEBUG 2/25/2026, 4:33:31 PM  256  putAccelerator Format -> F&ormat
+DEBUG 2/25/2026, 4:33:31 PM  257  putAccelerator View -> &View
+DEBUG 2/25/2026, 4:33:31 PM  257  putAccelerator Themes -> &Themes
+DEBUG 2/25/2026, 4:33:31 PM  257  putAccelerator Help -> &Help
+INFO 2/25/2026, 4:33:31 PM  322  synced recovery
+DEBUG 2/25/2026, 4:33:32 PM  773  onUnfillLicense
+ERROR 2/25/2026, 4:33:32 PM  781  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+INFO 2/25/2026, 4:33:32 PM  783  handle document.loadData
+DEBUG 2/25/2026, 4:33:32 PM  783  document.loadData 0
+ERROR 2/25/2026, 4:33:32 PM  783  Error: net::ERR_FILE_NOT_FOUND
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:123516)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+INFO 2/25/2026, 4:33:32 PM  859  [RenderProcess 1][Log] [UndoManager] reset commandStack
+INFO 2/25/2026, 4:33:32 PM  859  [RenderProcess 1][Log] reset NodeMap
+INFO 2/25/2026, 4:33:32 PM  859  [RenderProcess 1][Log] readContentFrom /home/max/Agents/bbnl-product/Calculatie-product/workflow/03-evidence-matrix-v1.md
+DEBUG 2/25/2026, 4:33:32 PM  939  added recovery 1 /home/max/Agents/bbnl-product/Calculatie-product/workflow/03-evidence-matrix-v1.md  (0)
+INFO 2/25/2026, 4:33:32 PM  940  synced recovery
+INFO 2/25/2026, 4:33:32 PM  999  [RenderProcess 1][Log] onBecomeActive
+INFO 2/25/2026, 4:33:32 PM  999  [RenderProcess 1][Log] File.activeWindow = true
+INFO 2/25/2026, 4:34:24 PM  53200  [focus] 1
+DEBUG 2/25/2026, 4:34:31 PM  59700  added recovery 1 /home/max/Agents/bbnl-product/Calculatie-product/workflow/03-evidence-matrix-v1.md "# Evidence Matr...ct Brief.pdflk
+" (2077)
+INFO 2/25/2026, 4:34:31 PM  59701  synced recovery
+DEBUG 2/25/2026, 4:34:33 PM  62044  added recovery 1 /home/max/Agents/bbnl-product/Calculatie-product/workflow/03-evidence-matrix-v1.md "# Evidence Matr...duct Brief.pdf
+" (2075)
+INFO 2/25/2026, 4:34:33 PM  62046  synced recovery
+INFO 2/25/2026, 4:34:35 PM  64456  [blur] 1
+INFO 2/25/2026, 4:34:35 PM  64456  [win] blur
+INFO 2/25/2026, 4:34:35 PM  64457  [focus] 1
+INFO 2/25/2026, 4:34:35 PM  64457  [blur] 1
+INFO 2/25/2026, 4:34:35 PM  64458  [win] blur
+INFO 2/25/2026, 4:34:35 PM  64458  [focus] 1
+INFO 2/25/2026, 4:35:01 PM  89774  [blur] 1
+INFO 2/25/2026, 4:35:01 PM  89774  [win] blur
+INFO 2/25/2026, 4:35:57 PM  146663  [RenderProcess 1][Log] presentedItemChanged, path is -1147914078
+INFO 2/25/2026, 4:35:57 PM  146663  [RenderProcess 1][Log] getDataFromFile
+INFO 2/25/2026, 4:35:57 PM  146663  [RenderProcess 1][Log] readContentFrom /home/max/Agents/bbnl-product/Calculatie-product/workflow/03-evidence-matrix-v1.md
+INFO 2/25/2026, 4:35:57 PM  146664  [RenderProcess 1][Log] presentedItemChanged did happen
+DEBUG 2/25/2026, 4:35:57 PM  146664  dialog.showMessageBox
+INFO 2/25/2026, 4:36:03 PM  151864  [RenderProcess 1][Log] doHandlerPresentedItemChange
+INFO 2/25/2026, 4:36:03 PM  151865  [RenderProcess 1][Log] getDataFromFile
+INFO 2/25/2026, 4:36:03 PM  151866  [RenderProcess 1][Log] readContentFrom /home/max/Agents/bbnl-product/Calculatie-product/workflow/03-evidence-matrix-v1.md
+INFO 2/25/2026, 4:36:03 PM  151868  [RenderProcess 1][Log] File.reloadContent, {"fromDiskChange":true}
+INFO 2/25/2026, 4:36:03 PM  151869  [RenderProcess 1][Log] reset NodeMap
+DEBUG 2/25/2026, 4:36:13 PM  161879  added recovery 1 /home/max/Agents/bbnl-product/Calculatie-product/workflow/03-evidence-matrix-v1.md  (0)
+INFO 2/25/2026, 4:36:13 PM  161882  synced recovery
+INFO 2/25/2026, 4:36:14 PM  162751  [focus] 1
+INFO 2/25/2026, 4:36:16 PM  164910  synced recovery
+INFO 2/25/2026, 4:36:16 PM  164910  ----------------before-quit-----------------
+INFO 2/25/2026, 4:36:16 PM  164910  ------------------will-quit------------------
+INFO 2/25/2026, 4:36:16 PM  164912  -----------------quit------------------
+INFO 2/25/2026, 4:36:16 PM  164912  closeLogging

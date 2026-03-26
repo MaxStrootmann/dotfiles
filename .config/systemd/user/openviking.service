@@ -1,0 +1,14 @@
+[Unit]
+Description=OpenViking local context database
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/max/Work/memory
+ExecStart=/home/max/Work/memory/scripts/openviking-server.sh --host 127.0.0.1 --port 1933
+Restart=on-failure
+RestartSec=3
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target
