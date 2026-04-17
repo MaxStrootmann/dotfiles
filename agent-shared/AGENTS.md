@@ -1,5 +1,7 @@
 # Documentation contract
 
+Agents do not have infinite context windows and can only work from what is in the current chat history plus what they can find in the repo. Keep this documentation system in place, so agents can recover context quickly, stay on track, and work effectively without wasting time rediscovering the project.
+
 Keep the documentation set small and consistent, so both humans and agents always know where to look and what to update.
 
 - Keep `~/AGENTS.md` for global rules only, so cross-project guidance stays in one stable place.
