@@ -1,30 +1,29 @@
 # Documentation contract
 
-Keep the documentation set small and consistent.
+Keep the documentation set small and consistent, so both humans and agents always know where to look and what to update.
 
-- `~/AGENTS.md`
-  - Global rules only.
-  - Top-level table of contents for cross-project guidance.
-  - Stored via GNU Stow in `~/dotfiles` and version-controlled there, so changes here must be committed and pushed.
-- `./AGENTS.md`
-  - Local project table of contents.
-  - Project-specific agent behavior notes only.
-- `./README.md`
-  - Human quickstart.
-  - Explain what the project is, current state, and key workflows.
-  - Prefer Mermaid diagrams for fast visual orientation.
-- `./TODO.md`
-  - Shared progress/status tracker for humans and agents.
-  - Keep it aligned with the real implementation state.
-- `./docs/*.md`
-  - Agent memory layer.
-  - Notes, runbooks, findings, decisions, and session-to-session context so new agents can recover context quickly.
+- Keep `~/AGENTS.md` for global rules only, so cross-project guidance stays in one stable place.
+- Keep `~/AGENTS.md` as the top-level table of contents for cross-project guidance, so agents can discover the right local context quickly.
+- Keep `~/AGENTS.md` stored via GNU Stow in `~/dotfiles` and version-controlled there, so changes to your global workflow are preserved, reviewable, and reusable across sessions and machines.
+
+- Keep `./AGENTS.md` as the local project table of contents, so agents can find the important project docs fast.
+- Keep `./AGENTS.md` for project-specific agent behavior notes only, so repo-local rules do not leak into global guidance.
+
+- Keep `./README.md` as the human quickstart, so you can get up to speed on what the project is and how it currently works.
+- Keep `./README.md` focused on the current state, setup, and key workflows, so it stays useful instead of turning into a historical dump.
+- Prefer Mermaid diagrams in `./README.md`, so the current architecture and flow are easy to grasp at a glance.
+
+- Keep `./TODO.md` as the shared progress tracker for humans and agents, so everyone can see what is done, what is next, and how far along the project really is.
+- Keep `./TODO.md` aligned with the real implementation state, so planning does not drift away from reality.
+
+- Keep `./docs/*.md` as the agent memory layer, so each new session can recover context despite agent amnesia.
+- Put notes, runbooks, findings, decisions, and other durable context in `./docs/*.md`, so important knowledge is not trapped in chat history.
 
 Rules:
-- Keep repo-specific detail out of `~/AGENTS.md`.
-- Keep `README.md` and `TODO.md` current whenever behavior or status changes.
-- Index important project docs from the nearest `./AGENTS.md`.
-- Prefer adding durable context to `./docs/*.md` instead of leaving it only in chat history.
+- Keep repo-specific detail out of `~/AGENTS.md`, so the global file stays short, stable, and broadly reusable.
+- Keep `README.md` and `TODO.md` current whenever behavior or status changes, so humans and agents see the same reality.
+- Index important project docs from the nearest `./AGENTS.md`, so agents can navigate the repo quickly.
+- Prefer adding durable context to `./docs/*.md` instead of leaving it only in chat history, so future sessions can find and reuse it.
 
 Use ~/AGENTS.md as the global behavior note file and top-level table of contents for cross-project guidance. Keep directory-scoped instructions and notes in a dedicated `AGENTS.md` inside that project or workflow directory. Also notes on mistakes and specific behavior changes for future sessions should be noted here when they are global rather than repo-specific.
 
