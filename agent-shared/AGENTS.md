@@ -35,7 +35,6 @@ Rules:
 - Commit and push directly to `master`, so local work and remote state stay closely aligned.
 - If a project does not yet have a GitHub repo, create a private one with the `gh` CLI, so the work is backed up and ready to sync immediately.
 
-Use ~/AGENTS.md as the global behavior note file and top-level table of contents for cross-project guidance. Keep directory-scoped instructions and notes in a dedicated `AGENTS.md` inside that project or workflow directory. Also notes on mistakes and specific behavior changes for future sessions should be noted here when they are global rather than repo-specific.
 
 ## Project AGENTS Index
 
@@ -44,17 +43,32 @@ Use ~/AGENTS.md as the global behavior note file and top-level table of contents
 - `/home/max/Work/estimation/AGENTS.md`
 - `/home/max/Work/zoho/AGENTS.md`
 
+## Pi coding agent contract
+
+- Prefer global Pi configuration and resources over project-local customization, so personal Pi workflow changes stay centralized unless the user explicitly wants repo-local behavior.
+- When changing Pi extensions or similar custom scripts, update the existing implementation in place, so there is one clear active code path instead of parallel legacy variants.
+- Use the global Pi extension registry commands first:
+  - `/extensions [all|global|project]`
+  - `/extension <name>`
+  - Registry source: `~/.pi/agent/extensions/extension-registry/index.ts`
+  so extension discovery starts from the same canonical index every time.
+- When the user says to use "subagents", interpret that as the Pi swarm extension at `~/.pi/agent/extensions/swarm/index.ts`, so subagent orchestration uses the intended Pi workflow instead of ad hoc local parallelism.
+- Prefer the Pi swarm slash-command workflow:
+  - `/swarm-start`
+  - `/swarm-assign`
+  - `/swarm-collect`
+  - `/swarm-stop`
+  so the active Pi session remains the orchestrator and neighboring panes stay coordinated.
+- Do not fall back to raw tmux scripting unless the harness cannot use the Pi slash-command flow, so the normal Pi workflow stays the default and any lower-level fallback stays explicit.
+- When working on Pi itself, read the local Pi source and docs first, so implementation and advice match the actual installed instance.
+- Use the local Pi source at `~/.bun/install/global/node_modules/@mariozechner/pi-coding-agent`, so you can inspect the real code behind this installed Pi instance.
+- Use the main Pi docs at `~/.bun/install/global/node_modules/@mariozechner/pi-coding-agent/README.md`, so you start from the primary local documentation entrypoint.
+- Use the additional Pi docs at `~/.bun/install/global/node_modules/@mariozechner/pi-coding-agent/docs`, so feature-specific context such as extensions, themes, skills, prompt templates, TUI, SDK integrations, providers, models, and packages is easy to find.
+- Use the local Pi examples at `~/.bun/install/global/node_modules/@mariozechner/pi-coding-agent/examples`, so extension and SDK work can follow real working patterns from the installed codebase.
+
 ## Global Behavior Notes
 
 - Prefer keeping repo-specific rules, runbooks, and notes out of `~/AGENTS.md`; store them in the nearest project-level `AGENTS.md` instead.
-- For pi customizations and personal workflow tweaks, prefer global configuration/resources over project-local ones unless the user explicitly asks for a repo-local customization.
-- When changing extensions or similar custom scripts, update the existing implementation in place. Do not keep old versions, parallel variants, or superseded code paths unless the user explicitly asks for them.
-- For pi extension discovery, use the global extension registry commands first:
-  - `/extensions [all|global|project]`
-  - `/extension <name>`
-  - Registry extension path: `~/.pi/agent/extensions/extension-registry/index.ts`
-- When the user says to use "subagents", interpret that as using the pi swarm extension (`~/.pi/agent/extensions/swarm/index.ts`) unless they clearly mean another orchestration method. Do not substitute parallel local tool calls for swarm-based subagents.
-- When using the swarm extension, prefer the active session's slash-command workflow (`/swarm-start`, `/swarm-assign`, `/swarm-collect`, `/swarm-stop`) so the agent remains the orchestrator in the current session with neighboring panes. Do not fall back to ad hoc raw tmux scripting unless the harness cannot invoke the slash-command flow directly, and in that case say so explicitly first.
 - Keep git working trees clean by making small, frequent commits instead of letting unrelated changes accumulate.
 - Do not use branches or worktrees unless the user explicitly asks for them.
 - Always keep the nearest relevant `README.md` up to date when the project’s current behavior, setup, or workflows change.
