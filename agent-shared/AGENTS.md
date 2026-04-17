@@ -27,6 +27,14 @@ Rules:
 - Index important project docs from the nearest `./AGENTS.md`, so agents can navigate the repo quickly.
 - Prefer adding durable context to `./docs/*.md` instead of leaving it only in chat history, so future sessions can find and reuse it.
 
+## Git and GitHub contract
+
+- Always use `git` and the `gh` CLI for version control tasks, so repo state and GitHub state are managed consistently from the terminal.
+- Avoid branches and worktrees, so the working flow stays simple and there is only one active line of work unless the user explicitly asks otherwise.
+- Make small, frequent commits, so changes stay easy to review, understand, and roll back if needed.
+- Commit and push directly to `master`, so local work and remote state stay closely aligned.
+- If a project does not yet have a GitHub repo, create a private one with the `gh` CLI, so the work is backed up and ready to sync immediately.
+
 Use ~/AGENTS.md as the global behavior note file and top-level table of contents for cross-project guidance. Keep directory-scoped instructions and notes in a dedicated `AGENTS.md` inside that project or workflow directory. Also notes on mistakes and specific behavior changes for future sessions should be noted here when they are global rather than repo-specific.
 
 ## Project AGENTS Index
