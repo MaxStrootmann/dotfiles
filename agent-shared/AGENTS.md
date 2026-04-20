@@ -27,6 +27,18 @@ Rules:
 - Index important project docs from the nearest `./AGENTS.md`, so agents can navigate the repo quickly.
 - Prefer adding durable context to `./docs/*.md` instead of leaving it only in chat history, so future sessions can find and reuse it.
 
+## Shared VPS thin-client workflow
+
+When using the shared VPS/browser workflow:
+- Start the shared browser on the VPS with `shared-browser start` and verify with `shared-browser status`.
+- From the local machine, open the browser tunnel with `dev tunnel`.
+- Use the forwarded noVNC session at `http://127.0.0.1:6080/vnc.html?autoconnect=1&resize=scale` to view/control the shared browser.
+- On the VPS, prefer `agent-browser --cdp 9222 ...` so the agent and user operate the same Chromium session.
+- Use shared file helpers from the local machine:
+  - `dev put <file>` to send files to `~/shared/inbox`
+  - `dev get` or `dev get <path>` to sync files back from `~/shared`
+- Treat `~/shared/inbox`, `~/shared/outbox`, `~/shared/shots`, and `~/shared/downloads` as the standard handoff locations.
+
 ## Git and GitHub contract
 
 - Always use `git` and the `gh` CLI for version control tasks, so repo state and GitHub state are managed consistently from the terminal.
@@ -45,6 +57,12 @@ Rules:
 
 ## Pi coding agent contract
 
+- When working on Pi itself, read the local Pi source and docs first, so implementation and advice match the actual installed instance.
+- Use the local Pi source at `~/.bun/install/global/node_modules/@mariozechner/pi-coding-agent`, so you can inspect the real code behind this installed Pi instance.
+- Use the main Pi docs at `~/.bun/install/global/node_modules/@mariozechner/pi-coding-agent/README.md`, so you start from the primary local documentation entrypoint.
+- Use the additional Pi docs at `~/.bun/install/global/node_modules/@mariozechner/pi-coding-agent/docs`, so feature-specific context such as extensions, themes, skills, prompt templates, TUI, SDK integrations, providers, models, and packages is easy to find.
+- Use the local Pi examples at `~/.bun/install/global/node_modules/@mariozechner/pi-coding-agent/examples`, so extension and SDK work can follow real working patterns from the installed codebase.
+
 - Prefer global Pi configuration and resources over project-local customization, so personal Pi workflow changes stay centralized unless the user explicitly wants repo-local behavior.
 - When changing Pi extensions or similar custom scripts, update the existing implementation in place, so there is one clear active code path instead of parallel legacy variants.
 - Use the global Pi extension registry commands first:
@@ -52,27 +70,7 @@ Rules:
   - `/extension <name>`
   - Registry source: `~/.pi/agent/extensions/extension-registry/index.ts`
   so extension discovery starts from the same canonical index every time.
-- When the user says to use "subagents", interpret that as the Pi swarm extension at `~/.pi/agent/extensions/swarm/index.ts`, so subagent orchestration uses the intended Pi workflow instead of ad hoc local parallelism.
-- Prefer the Pi swarm slash-command workflow:
-  - `/swarm-start`
-  - `/swarm-assign`
-  - `/swarm-collect`
-  - `/swarm-stop`
-  so the active Pi session remains the orchestrator and neighboring panes stay coordinated.
-- Do not fall back to raw tmux scripting unless the harness cannot use the Pi slash-command flow, so the normal Pi workflow stays the default and any lower-level fallback stays explicit.
-- When working on Pi itself, read the local Pi source and docs first, so implementation and advice match the actual installed instance.
-- Use the local Pi source at `~/.bun/install/global/node_modules/@mariozechner/pi-coding-agent`, so you can inspect the real code behind this installed Pi instance.
-- Use the main Pi docs at `~/.bun/install/global/node_modules/@mariozechner/pi-coding-agent/README.md`, so you start from the primary local documentation entrypoint.
-- Use the additional Pi docs at `~/.bun/install/global/node_modules/@mariozechner/pi-coding-agent/docs`, so feature-specific context such as extensions, themes, skills, prompt templates, TUI, SDK integrations, providers, models, and packages is easy to find.
-- Use the local Pi examples at `~/.bun/install/global/node_modules/@mariozechner/pi-coding-agent/examples`, so extension and SDK work can follow real working patterns from the installed codebase.
 
-## Global Behavior Notes
-
-- Prefer keeping repo-specific rules, runbooks, and notes out of `~/AGENTS.md`; store them in the nearest project-level `AGENTS.md` instead.
-- Keep git working trees clean by making small, frequent commits instead of letting unrelated changes accumulate.
-- Do not use branches or worktrees unless the user explicitly asks for them.
-- Always keep the nearest relevant `README.md` up to date when the project’s current behavior, setup, or workflows change.
-- When a repo uses a planning or status tracker such as `TODO.md`, keep it aligned with the actual implementation state at the same time as the `README.md` so status docs do not drift.
 
 # Concise response preference
 

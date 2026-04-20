@@ -1,0 +1,15 @@
+{
+  "lastChangelogVersion": "0.67.68",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-5.4",
+  "theme": "dark",
+  "editorPaddingX": 0,
+  "extensions": [
+    "-extensions/prompt-input-padding.ts"
+  ],
+  "packages": [
+    "npm:pi-docparser",
+    "npm:pi-perplexity",
+    "npm:pi-annotate"
+  ]
+}

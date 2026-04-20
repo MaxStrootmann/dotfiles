@@ -1,0 +1,117 @@
+model = "gpt-5.4"
+model_reasoning_effort = "high"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+web_search = "live"
+approvals_reviewer = "user"
+service_tier = "fast"
+
+[sandbox_workspace_write]
+network_access = true
+
+[features]
+use_linux_sandbox_bwrap = true
+
+
+[projects."/home/max/Work/chatbot"]
+trust_level = "trusted"
+
+[projects."/home/max/dotfiles"]
+trust_level = "trusted"
+
+[projects."/home/max/Work/website-bbnl"]
+trust_level = "trusted"
+
+[projects."/home/max/Agents/facturen"]
+trust_level = "trusted"
+
+[projects."/home/max/Agents/product-engine"]
+trust_level = "trusted"
+
+[projects."/home/max"]
+trust_level = "trusted"
+
+[projects."/home/max/Agents/safe"]
+trust_level = "trusted"
+
+[projects."/home/max/Agents/test"]
+trust_level = "trusted"
+
+[projects."/home/max/Agents/zoho"]
+trust_level = "trusted"
+
+[projects."/home/max/.codex"]
+trust_level = "trusted"
+
+[projects."/Storage/Documents/max_strootmann"]
+trust_level = "trusted"
+
+[projects."/home/max/Work/bouwbureanederland-website"]
+trust_level = "trusted"
+
+[projects."/home/max/Work/pi-agent"]
+trust_level = "trusted"
+
+[projects."/home/max/Work/frontend-bbnl"]
+trust_level = "trusted"
+
+[projects."/home/max/Work/front-bbnl"]
+trust_level = "trusted"
+
+[projects."/home/max/Work"]
+trust_level = "trusted"
+
+[projects."/home/max/Work/memory"]
+trust_level = "trusted"
+
+[projects."/home/max/Work/agent-ui"]
+trust_level = "trusted"
+
+[projects."/home/max/Work/bouwke-de-bot"]
+trust_level = "trusted"
+
+[projects."/home/max/Work/big-vps"]
+trust_level = "trusted"
+
+[projects."/home/max/Work/odoo"]
+trust_level = "trusted"
+
+[projects."/home/max/Work/estimation"]
+trust_level = "trusted"
+
+[projects."/home/max/Work/zoho"]
+trust_level = "trusted"
+
+[mcp_servers.figma]
+url = "https://mcp.figma.com/mcp"
+
+[mcp_servers.perplexity]
+command = "/home/max/.codex/memories/bin/perplexity-mcp-server"
+
+[mcp_servers.payload-bouwbureanederland-explicit-dev]
+url = "http://localhost:3000/api/mcp"
+bearer_token_env_var = "PAYLOAD_BBNL_MCP_TOKEN"
+startup_timeout_sec = 30.0
+
+[mcp_servers.payload-bouwbureanederland-explicit-prod]
+url = "https://website.manndigital.nl/api/mcp"
+bearer_token_env_var = "PAYLOAD_BBNL_PROD_MCP_TOKEN"
+startup_timeout_sec = 30.0
+
+[mcp_servers.openviking]
+command = "/home/max/Work/memory/scripts/openviking-mcp.sh"
+
+[mcp_servers.odoo]
+command = "uvx"
+args = ["mcp-server-odoo"]
+
+[mcp_servers.odoo.env]
+ODOO_API_KEY = "b6f1f128c9c394d1049928799c5c9221371b67d4"
+ODOO_USER = "admin"
+ODOO_PASSWORD = "Henky26!"
+ODOO_DB = "e3bf33f7-a835-44a9-ad25-7180b2344e28"
+ODOO_URL = "https://mann-digital-production.apps.oec.sh"
+ODOO_YOLO = "true"
+
+[plugins."github@openai-curated"]
+enabled = true

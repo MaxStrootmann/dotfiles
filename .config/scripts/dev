@@ -2,9 +2,9 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-REMOTE_HOST="${REMOTE_HOST:-max@agent-zero}"
+REMOTE_HOST="${REMOTE_HOST:-mann-dev}"
 NOVNC_URL="${NOVNC_URL:-http://127.0.0.1:6080/vnc.html?autoconnect=1&resize=scale}"
-TUNNEL_PID_FILE="${XDG_RUNTIME_DIR:-/tmp}/agent-zero-browser-tunnel.pid"
+TUNNEL_PID_FILE="${XDG_RUNTIME_DIR:-/tmp}/mann-dev-browser-tunnel.pid"
 
 open_browser_tab() {
   if command -v google-chrome-stable >/dev/null 2>&1; then
@@ -34,7 +34,7 @@ start_tunnel() {
   if tunnel_running; then
     echo "Tunnel already running on PID $(cat "${TUNNEL_PID_FILE}")"
   else
-    nohup "${SCRIPT_DIR}/agent-zero-browser-tunnel.sh" >/tmp/agent-zero-browser-tunnel.log 2>&1 &
+    nohup "${SCRIPT_DIR}/agent-zero-browser-tunnel.sh" >/tmp/mann-dev-browser-tunnel.log 2>&1 &
     echo $! > "${TUNNEL_PID_FILE}"
     sleep 1
   fi
@@ -67,10 +67,10 @@ usage() {
 usage: dev <command> [args]
 
 commands:
-  bootstrap       bootstrap max@agent-zero
+  bootstrap       bootstrap mann-dev
   sync-dotfiles   sync the server-safe dotfiles subset to the VPS
   put <paths...>  copy files to ~/shared/inbox on the VPS
-  get [paths...]  copy files from the VPS to ~/Downloads/agent-zero
+  get [paths...]  copy files from the VPS to ~/Downloads/mann-dev
   tunnel          start the SSH tunnel and open noVNC in a browser tab
   tunnel-stop     stop the background SSH tunnel
   tunnel-status   show tunnel status

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REMOTE_HOST="${REMOTE_HOST:-max@agent-zero}"
-TARGET_DIR="${TARGET_DIR:-$HOME/Downloads/agent-zero}"
+REMOTE_HOST="${REMOTE_HOST:-mann-dev}"
+TARGET_DIR="${TARGET_DIR:-$HOME/Downloads/mann-dev}"
 
 mkdir -p "${TARGET_DIR}"
 
@@ -12,6 +12,9 @@ normalize_remote_path() {
   case "${remote_path}" in
     /home/max/shared/*)
       printf '~/shared/%s\n' "${remote_path#/home/max/shared/}"
+      ;;
+    /home/mann/shared/*)
+      printf '~/shared/%s\n' "${remote_path#/home/mann/shared/}"
       ;;
     shared/*)
       printf '~/%s\n' "${remote_path}"

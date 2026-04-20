@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REMOTE_HOST="${REMOTE_HOST:-max@agent-zero}"
+REMOTE_HOST="${REMOTE_HOST:-mann-dev}"
 
 exec ssh \
   -L 6080:127.0.0.1:6080 \

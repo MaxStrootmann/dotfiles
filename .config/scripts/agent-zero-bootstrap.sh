@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REMOTE_HOST="${REMOTE_HOST:-max@agent-zero}"
+REMOTE_HOST="${REMOTE_HOST:-mann-dev}"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "${SCRIPT_DIR}/../../.." && pwd)"
 NVIM_VERSION="${NVIM_VERSION:-v0.11.6}"

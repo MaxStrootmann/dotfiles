@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REMOTE_HOST="${REMOTE_HOST:-max@agent-zero}"
+REMOTE_HOST="${REMOTE_HOST:-mann-dev}"
 
 if [ "$#" -lt 1 ]; then
   echo "usage: agent-zero-put.sh <file-or-dir> [...]" >&2

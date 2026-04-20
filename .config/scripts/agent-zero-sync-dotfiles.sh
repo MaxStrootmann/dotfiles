@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REMOTE_HOST="${REMOTE_HOST:-max@agent-zero}"
+REMOTE_HOST="${REMOTE_HOST:-mann-dev}"
 ROOT_DIR="${ROOT_DIR:-$HOME}"
 LOCAL_DOTFILES_DIR="${LOCAL_DOTFILES_DIR:-${ROOT_DIR}/dotfiles}"
 REMOTE_DOTFILES_DIR="${REMOTE_DOTFILES_DIR:-~/dotfiles}"
