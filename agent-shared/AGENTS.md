@@ -55,6 +55,10 @@ When using the shared VPS/browser workflow:
 - `/home/max/Work/estimation/AGENTS.md`
 - `/home/max/Work/zoho/AGENTS.md`
 
+## Obsidian vault contract
+
+- When I mention my Obsidian vault, personal wiki, `_wiki/` overlay, or vault notes, first read the `max-obsidian-wiki` skill at `/home/max/.pi/agent/skills/max-obsidian-wiki/SKILL.md`, so vault work follows the current safety rules, canonical paths, and wiki maintenance workflow.
+
 ## Pi coding agent contract
 
 - When working on Pi itself, read the local Pi source and docs first, so implementation and advice match the actual installed instance.
