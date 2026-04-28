@@ -46,6 +46,8 @@ Rules:
 
 ## Paperclip contract
 
+- When I say “Paperclip company”, I mean a company designed through Paperclip Company Studio according to the AI Company Markdown OS spec in my Obsidian vault: Markdown owns doctrine/reports, Paperclip owns runtime state, and compiled `AGENTS.md` files are the injected agent prompts.
+- Do not interpret “Paperclip company” as just one agent, a loose prompt, a normal code repo, or only a Paperclip runtime record. Treat it as an agent organization with explicit mission, roles, hierarchy, rekenschap/accountability relationships, handoffs, governance, and runtime mapping.
 - When working with Paperclip runtime, first read the `paperclip` skill at `/home/max/.pi/agent/skills/paperclip/SKILL.md`, so API/UI operations follow the current control-plane workflow.
 - Use the hosted Paperclip instance at `https://paperclip.manndigital.nl` by default; it runs on the `mann-dev` VPS, reachable with `ssh mann-dev` from this machine.
 - For Paperclip UI work, use the `agent-browser` skill in non-headless/interactive mode when login or visual inspection is needed, so Max can log in if required.
