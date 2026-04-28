@@ -27,18 +27,6 @@ Rules:
 - Index important project docs from the nearest `./AGENTS.md`, so agents can navigate the repo quickly.
 - Prefer adding durable context to `./docs/*.md` instead of leaving it only in chat history, so future sessions can find and reuse it.
 
-## Shared VPS thin-client workflow
-
-When using the shared VPS/browser workflow:
-- Start the shared browser on the VPS with `shared-browser start` and verify with `shared-browser status`.
-- From the local machine, open the browser tunnel with `dev tunnel`.
-- Use the forwarded noVNC session at `http://127.0.0.1:6080/vnc.html?autoconnect=1&resize=scale` to view/control the shared browser.
-- On the VPS, prefer `agent-browser --cdp 9222 ...` so the agent and user operate the same Chromium session.
-- Use shared file helpers from the local machine:
-  - `dev put <file>` to send files to `~/shared/inbox`
-  - `dev get` or `dev get <path>` to sync files back from `~/shared`
-- Treat `~/shared/inbox`, `~/shared/outbox`, `~/shared/shots`, and `~/shared/downloads` as the standard handoff locations.
-
 ## Git and GitHub contract
 
 - Always use `git` and the `gh` CLI for version control tasks, so repo state and GitHub state are managed consistently from the terminal.
@@ -59,6 +47,12 @@ When using the shared VPS/browser workflow:
 
 - When I mention my Obsidian vault, personal wiki, `_wiki/` overlay, or vault notes, first read the `max-obsidian-wiki` skill at `/home/max/.pi/agent/skills/max-obsidian-wiki/SKILL.md`, so vault work follows the current safety rules, canonical paths, and wiki maintenance workflow.
 
+## Paperclip contract
+
+- When working with Paperclip runtime, first read the `paperclip` skill at `/home/max/.pi/agent/skills/paperclip/SKILL.md`, so API/UI operations follow the current control-plane workflow.
+- Use the hosted Paperclip instance at `https://paperclip.manndigital.nl` by default; it runs on the `mann-dev` VPS, reachable with `ssh mann-dev` from this machine.
+- For Paperclip UI work, use the `agent-browser` skill in non-headless/interactive mode when login or visual inspection is needed, so Max can log in if required.
+
 ## Pi coding agent contract
 
 - When working on Pi itself, read the local Pi source and docs first, so implementation and advice match the actual installed instance.
@@ -75,6 +69,10 @@ When using the shared VPS/browser workflow:
   - Registry source: `~/.pi/agent/extensions/extension-registry/index.ts`
   so extension discovery starts from the same canonical index every time.
 
+
+## Navigation preference
+
+- In custom Pi TUI pickers and navigable extension UIs, prefer `Ctrl+N` and `Ctrl+P` for next/previous navigation, so movement matches my terminal workflow better than arrow keys.
 
 # Concise response preference
 
