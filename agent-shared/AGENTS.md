@@ -45,12 +45,6 @@ Rules:
 - When I mention my Obsidian vault, personal wiki, `_wiki/` overlay, or vault notes, first read the `max-obsidian-wiki` skill at `/home/max/.pi/agent/skills/max-obsidian-wiki/SKILL.md`, so vault work follows the current safety rules, canonical paths, and wiki maintenance workflow.
 - Remember that the vault is actively synced by Obsidian on both local desktop (`/Storage/Documents/max_strootmann`) and the Paperclip host `mann-dev` (`/home/mann/max_strootmann`), so the VPS copy is not disposable scratch space and vault/source mutations remain approval-gated.
 
-## Paperclip contract
-
-- Use the explicit term “MDOS company” for what Max means by a Paperclip-company design: a company designed through Paperclip Company Studio according to the AI Company Markdown OS spec in my Obsidian vault. MDOS means Markdown OS: Markdown owns doctrine/reports, Paperclip owns runtime state, and compiled `AGENTS.md` files are the injected agent prompts.
-- When working with Paperclip runtime, first read the `paperclip` skill at `/home/max/.pi/agent/skills/paperclip/SKILL.md`, so API/UI operations follow the current control-plane workflow.
-- When designing, migrating, or setting up Paperclip companies, use the `create-paperclip-company-structure` skill and treat Paperclip Company Studio (`b9467b42-1a44-4045-8ed8-bcd8fd48a00d`) as the default design runtime unless I say otherwise.
-
 ## Pi coding agent contract
 
 - When working on Pi itself, read the local Pi source and docs first, so implementation and advice match the actual installed instance.
